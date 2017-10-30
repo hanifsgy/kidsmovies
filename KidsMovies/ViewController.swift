@@ -64,7 +64,10 @@ class ViewController: UIViewController {
     }
     
     func fetchData() {
-        Alamofire.request(WebServices.url).validate().responseJSON { (respond) in
+        Alamofire.request(WebServices.urlGenre).validate().responseJSON { (respond) in
+        }
+        
+        Alamofire.request(WebServices.urlGenre, method: .get, parameters: nil, encoding: JSONEncoding.default).validate().responseJSON { (respond) in
             print(respond)
         }
         

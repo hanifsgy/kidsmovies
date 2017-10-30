@@ -10,5 +10,7 @@ import Foundation
 
 
 struct WebServices {
-    static var url = "http://api.rottentomatoes.com/api/public/v1.0.json?apikey=a85dkvdn45wd28uwf3u3zxey"
+    static var url = "https://api.themoviedb.org/3/movie/550?api_key=50e258676d03126f7219771ca0c85c36"
+    
+    static var urlGenre = "https://api.themoviedb.org/3/genre/movie/list?api_key=50e258676d03126f7219771ca0c85c36&language=en-US"
 }
